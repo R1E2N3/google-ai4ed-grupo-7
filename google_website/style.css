@@ -3,3 +3,43 @@
     --secondary-color: blue;
 }
 
+.logo {
+    margin-right: 100px;
+}
+
+.descricao {
+    padding: 0 60px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.cta {
+    max-width: 50%;
+    padding: 20px 0;
+}
+
+.apresentacao {
+    margin-top: auto;
+}
+
+.primary-title {
+    margin-bottom: 50px;
+}
+
+
+
+.mit {
+    margin: 10px;
+}
+
+.parceria { 
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.parceria p {
+    margin-left: 10px;
+}

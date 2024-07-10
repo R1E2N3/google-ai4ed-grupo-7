@@ -1,6 +1,8 @@
 :root {
-    --primary-color: black;
-    --secondary-color: blue;
+    --google-blue: #4285F4;
+    --google-green: #0F9D58;
+    --google-yellow: #F4B400;
+    --google-red: #DB4437;
 }
 
 .logo {
@@ -16,8 +18,13 @@
 }
 
 .cta {
+    background-color: var(--google-blue);
     max-width: 50%;
     padding: 20px 0;
+}
+
+.cta-link {
+    color: var(--google-blue)
 }
 
 .apresentacao {
@@ -41,5 +48,64 @@
 }
 
 .parceria p {
+    text-align: left;
     margin-left: 10px;
+}
+
+.benefit {
+    width: 50%;
+    padding-bottom: 20px;
+
+}
+
+#benefit-time {
+    color: var(--google-green);
+    border-bottom: 5px solid var(--google-green);
+}
+
+#benefit-online {
+    color: var(--google-blue);
+    border-bottom: 5px solid var(--google-blue);
+}
+
+
+
+.bold {
+    font-weight: 400;
+}
+
+.check {
+    width: 15px;
+}
+
+.beneficios li {
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.about {
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    padding: 100px 0;
+}
+
+.card-body {
+    align-items: center;
+    justify-content: center;    
+    display: flex;
+    flex-direction: row;
+
+}
+
+.ul-no-style {
+    list-style: none;
+}
+
+.card-about {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card #c1 {
+    text-align: left;
 }

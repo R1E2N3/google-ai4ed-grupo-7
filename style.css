@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
     --google-blue: #4285F4;
@@ -8,6 +8,9 @@
     --google-red: #DB4437;
 }
 
+.enroll {
+    margin-right: 20px;
+}
 
 .logo {
     margin-right: 100px;
@@ -111,7 +114,7 @@
 }
 
 .card {
-    padding: 0;
+    padding: 1;
 }
 
 .card-about {
@@ -121,64 +124,6 @@
 .card #c1 {
     text-align: left;
 }
-
-.navbar {
-    height: 60px;
-    width: 90vw;
-    margin: 0 auto;
-    margin-top: 65px;
-    padding-left: 1em;
-    padding-right: 1em;
-    box-sizing: border-box;
-    display: block;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15),
-      0px 10px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 9px;
-    position: relative;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .navbar .logo {
-    text-transform: uppercase;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 300;
-    font-size: 16pt;
-  }
-  
-  .navbar .logo a {
-    text-decoration: none;
-    color: #090909;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 4em;
-  }
-  
-  .navbar ul li {
-    display: inline;
-    text-decoration: none;
-  }
-  
-  .navbar ul li a {
-    padding: 0.25em 1em 0.25em 1em;
-    color: #090909;
-    text-decoration: none;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-  }
-  
-  .navbar a:hover {
-    color: #777;
-    transition-duration: 0.3s;
-  }
   
 
   .sticky {
@@ -187,4 +132,188 @@
     margin-right: 50%;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#sobre-mim img {
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.comment {
+    margin-bottom: 20px;
+}
+
+.comment .card-body {
+    align-items: center;
+    justify-content: center;    
+    display: block;
+    flex-direction: row;
+    min-height: 0px;
+}
+
+.comment .card-title {
+    font-size: 1.5em;
+}
+
+.navbar {
+    padding-left: 30px;
+    margin-bottom: 0;
+  }
+  
+  .main-content {
+    height: calc(90vh - 56px);
+    display: flex;
+    align-items: center;
+  }
+  
+  .display-4 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .display-4 {
+      font-size: 2rem;
+    }
+  
+    .text-right {
+      text-align: left !important;
+    }
+  
+    .text-left {
+      text-align: center !important;
+    }
+  
+    .main-content .col-md-6 {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 700px ) {
+
+    .copy-image {
+        height: 200px;
+    }
+
+  }
+
+  img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+#typing-animation {
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+.copy-image {
+    margin-left: 10%;
+}
+
+h3 {
+    font-size: 5em;
+}
+
+
+.curso-google h1 {
+    font-size: 4rem;
+    text-align: center;
+    top: 50%;
+}
+.curso-google .col-md-6:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ul-no-style {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.icones {
+    width: 3rem;
+    height: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%
+    
+}
+.row.align-items-center {
+    display: flex;
+    align-items: stretch; 
+}
+
+.woman {
+    text-align: right;
+    margin: auto;
+}
+
+#primeiro-card .card {
+    background-color: #4286f487; /* Cor de fundo vermelho claro */
+}
+#segundo-card .card {
+    background-color: #db45379f; /* Cor de fundo verde claro */
+}
+#terceiro-card .card {
+    background-color: #f4b300a3; /* Cor de fundo azul claro */
+}
+#quarto-card .card {
+    background-color: #0f9d589d; /* Cor de fundo amarelo claro */
+}
+
+.list-benefits {
+    list-style: none;
+}
+
+.list-benefits li { 
+    font-size: large;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif !important;
+
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }

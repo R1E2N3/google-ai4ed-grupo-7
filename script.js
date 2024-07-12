@@ -1,20 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {myFunction()};
-  
-    // Get the header
-    var header = document.getElementById("myHeader");
-  
-    // Get the offset position of the navbar
-    var sticky = header.offsetTop;
-  
-    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
+  const text = "Modernize";
+  const typingSpeed = 150; // Adjust typing speed here
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      document.getElementById("typing-animation").innerHTML += text.charAt(index);
+      index++;
+      setTimeout(type, typingSpeed);
+    } else {
+      document.getElementById("typing-animation").style.borderRight = "none"; // Remove cursor
     }
-  });
-  
+  }
+
+  type();
+});
